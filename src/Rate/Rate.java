@@ -1,14 +1,14 @@
 package Rate;
 
 public class Rate {
-    public String getDivisionName(int capitalDivisionCode) {
-        return Rates.findByDivisionCode(capitalDivisionCode).getDivisionName();
+    public String getDivisionName(int divisionCode) {
+        return Rates.findByDivisionCode(divisionCode).getDivisionName();
     }
-    public double getWaterRate(int capitalDivisionCode) {
-        return Rates.findByDivisionCode(capitalDivisionCode).getWaterRate();
+    public double getTelephoneCharges(int divisionCode) {
+        return Rates.findByDivisionCode(divisionCode).getTelephoneCharges();
     }
 
-    public double getTaxRate(int capitalDivisionCode) {
-        return Rates.findByDivisionCode(capitalDivisionCode).getTaxRate();
+    public double getTaxRate(int divisionCode) {
+        return Rates.findByDivisionCode(divisionCode).getTaxRate();
     }
 }

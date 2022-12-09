@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.Comparator;
 public class Compute {
     public void computeCustomerAmount (Customer customer) {
-        double rate = new Rate().getWaterRate(customer.getDivision());
+        double rate = new Rate().getTelephoneCharges(customer.getDivision());
         double usage = customer.getUsage();
 
         int basic = 3200;

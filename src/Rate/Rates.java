@@ -11,12 +11,12 @@ public enum Rates {
 
     private final int divisionCode;
     private final String divisionName;
-    private final double waterRate;
+    private final double telephoneCharges;
     private final double taxRate;
     Rates(int divisionCode, String divisionName, double waterRate, double taxRate) {
         this.divisionCode = divisionCode;
         this.divisionName = divisionName;
-        this.waterRate = waterRate;
+        this.telephoneCharges = waterRate;
         this.taxRate = taxRate;
     }
 
@@ -34,8 +34,8 @@ public enum Rates {
     public String getDivisionName() {
         return divisionName;
     }
-    public double getWaterRate() {
-        return waterRate;
+    public double getTelephoneCharges() {
+        return telephoneCharges;
     }
     public double getTaxRate() {
         return taxRate;
